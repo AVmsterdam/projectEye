@@ -2,70 +2,69 @@
 <html>
 <head>
 <style>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
 div.container {
     width: 100%;
     border: 1px solid gray;
 }
+
 button.button {
 	width: 10%;
 	clear: left;
 	display: block;
 	left: 20px;
-	border-radius: 100%;
 }
+
 div.textbox{
-	font-size:12px;
+	font-size:14px;
+	font-family: 'Lato', sans-serif;
 	padding: 1em;
 	color: black;
 	background-color: #CCCCCC;
 	clear: left;
 	text-align: center;
-	
 }
+
 header, footer {
     padding: 1em;
     color: white;
+	font-family: 'Lato', sans-serif;
     background-color: #191970;
     clear: left;
     text-align: center;
 }
-nav {
-    float: left;
-    max-width: 160px;
-    margin: 0;
-    padding: 1em;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
+
+.map{
+    width: 95%;
+	height: 80%; 
 }
    
-nav ul a {
-    text-decoration: none;
-}
+
 </style>
 </head>
 <body>
 
 <div class="container">
 
-<header>
+   <header>
    <h1>projectEye</h1>
- 
-</header>
+   </header>
+
 	<div align = "right">
 	<button type="button" class="button"><img src="http://cdn1.savepice.ru/uploads/2017/3/1/4c1a8b687adab45623001d62dd6074f5-full.png" 
 	height = 100% width = 100% >
 	</button>
 	</div>
-  <img src = "https://upload.wikimedia.org/wikipedia/commons/e/e5/Europe_political_chart_complete_blank.svg" 
-  height = 99% width = 99%  > 
-  </ul>
-  <div class="textbox">
-  <p>
-	Germany <br> GDP per capita: $49,768
-  </p>
-  </div>
+	
+	<div align = "center">
+    <img class = "map" 
+	src = "https://upload.wikimedia.org/wikipedia/commons/e/e5/Europe_political_chart_complete_blank.svg" > 
+	</div>
+  
+    <div class="textbox">
+    <p>Germany <br> GDP per capita: $49,768</p>
+    </div>
  
 
 <footer>Dennis - Bydlo</footer>
