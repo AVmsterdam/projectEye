@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+<style>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+div.container {
+    width: 100%;
+    border: 1px solid grey;
+}
+.button {
+	width: 6%;
+	clear: left;
+	display: block;
+	left: 2%;
+	border-radius: 100%;
+	position: fixed; top: 5%;
+}
+div.textboxheader{
+	font-size: 2em;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold; 
+	color: black;
+	clear: left;
+	text-align: center;
+	line-height: 150%;
+}
+div.textbox{
+	column-width: 30%;
+	column-count: 2;
+	font-size: 1em;
+	font-family: 'Lato', sans-serif;
+	padding: 1em;
+	color: black;
+	clear: left;
+	text-align: justify;
+	line-height: 130%;
+}
+header {
+    padding: 20px;
+    color: white;
+	font-family: 'Lato', sans-serif;
+    background-color: #191970;
+    clear: left;
+    text-align: center;
+	font-size: 1.2em; 
+}
+footer {
+    padding: 24px;
+    color: white;
+	font-family: 'Lato', sans-serif;
+    background-color: #191970;
+    clear: left;
+    text-align: justify;
+	font-size: 1.1em; 
+	
+	
+}
+.map{
+    width: 40%;
+	height: 80%; 
+}
+.sub-menu 
+{ 
+   display: none;
+   position: fixed; top: 20%;
+   background-color: #CCCCCC;
+} 
+.button:focus ~ .sub-menu, 
+.button:active ~ .sub-menu, 
+.sub-menu:hover 
+{ 
+   display: block; 
+} 
+   
+</style>
+</head>
+<body>
+
+<div class="container">
+
+   <header>
+   <h1>projectEye</h1>
+   </header>
+   
+	<div>
+	<a class="button" href="javascript:void(0);" tabindex="1"><img src="http://cdn1.savepice.ru/uploads/2017/3/1/4c1a8b687adab45623001d62dd6074f5-full.png" 
+	height = 100% width = 100% >
+	</a>
+	<ul class="sub-menu">
+		<li><a href="w">Economy</a></li>
+		<li><a href="weath">Weather</a></li>
+		<li><a href="g">Geography</a></li>
+	</ul>
+	</div>
+	
+	<div align = "center">
+    <img class = "map" 
+	src = "https://upload.wikimedia.org/wikipedia/commons/e/e5/Europe_political_chart_complete_blank.svg" > 
+	</div>
+	
+  
+	<div class="textboxheader">
+	Islamic Khalifat of Germano-France
+	</div>
+    <div class="textbox">
+    <p>GDP per capita: $9,65 <br> Unemployment rate: 76,8% <br> 
+	Ruler: Khalif Angelo Merke ibn Dschihad <br> Religion: Islam <br><br>
+	Hobbys:<ul><li>Attacking Poland</li><li>Attacking France</li><li>Building cars</li></ul>
+    </div>
+ 
+
+<footer>Concept and design by Andriy and Dennis Vershynin    avershynin@me.com    Munich, Germany</footer>
+
+</div>
+
+</body>
+</html>
