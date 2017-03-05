@@ -8,13 +8,13 @@ div.container {
     width: 100%;
     border: 1px solid grey;
 }
-button.button {
+.button {
 	width: 6%;
 	clear: left;
 	display: block;
-	right: 100px;
+	left: 2%;
 	border-radius: 100%;
-	position: fixed; top: 10%;
+	position: fixed; top: 5%;
 }
 div.textboxheader{
 	font-size: 2em;
@@ -45,6 +45,7 @@ header {
     text-align: center;
 	font-size: 1.2em; 
 }
+
 footer {
     padding: 24px;
     color: white;
@@ -52,14 +53,39 @@ footer {
     background-color: #191970;
     clear: left;
     text-align: justify;
-	font-size: 1.1em; 
+	font-size: 1.1em;
+}	
 	
-	
+div.column1{
+	left: 10%;
+	font-family: 'Lato', sans-serif;
+	clear: left;
+    text-align: justify;
+	font-size: 1.2em;
+}
+div.column2{
+	right:10%;
+	font-family: 'Lato', sans-serif;
+	clear: left;
+    text-align: justify;
+	font-size: 1.2em;
 }
 .map{
-    width: 40%;
-	height: 80%; 
+    width: 50%;
+	height: 90%; 
 }
+.sub-menu 
+{ 
+   display: none;
+   position: fixed; top: 20%;
+   background-color: #CCCCCC;
+} 
+.button:focus ~ .sub-menu, 
+.button:active ~ .sub-menu, 
+.sub-menu:hover 
+{ 
+   display: block; 
+} 
    
 </style>
 </head>
@@ -70,23 +96,37 @@ footer {
    <header>
    <h1>projectEye</h1>
    </header>
-
-	<button type="button" class="button"><img src="http://cdn1.savepice.ru/uploads/2017/3/1/4c1a8b687adab45623001d62dd6074f5-full.png" 
+   
+	<div>
+	<a class="button" href="javascript:void(0);" tabindex="1"><img src="http://cdn1.savepice.ru/uploads/2017/3/1/4c1a8b687adab45623001d62dd6074f5-full.png" 
 	height = 100% width = 100% >
-	</button>
+	</a>
+	<ul class="sub-menu">
+		<li><a href="w">Economy</a></li>
+		<li><a href="weath">Weather</a></li>
+		<li><a href="g">Geography</a></li>
+	</ul>
+	</div>
 	
 	<div align = "center">
     <img class = "map" 
 	src = "https://upload.wikimedia.org/wikipedia/commons/e/e5/Europe_political_chart_complete_blank.svg" > 
 	</div>
+	
   
 	<div class="textboxheader">
 	Islamic Khalifat of Germano-France
 	</div>
     <div class="textbox">
-    <p>GDP per capita: $9,65 <br> Unemployment rate: 76,8% <br> 
-	Ruler: Khalif Angelo Merke ibn Dschihad <br> Religion: Islam <br><br>
-	Hobbys:<ul><li>Attacking Poland</li><li>Attacking France</li><li>Building cars</li></ul>
+    <div class = "column1">
+	<h3>Main Information</h3>GDP per capita: $9,65 <br> Unemployment rate: 76,8%
+	<br>Ruler: Khalif Angelo Merke ibn Dschihad <br> Religion: Islam <br><br>
+	</div>
+	<div class = "column2">
+	<h3>Hobbys:</h3><ul><li>Attacking Poland</li><li>Attacking France</li><li>Building cars</li></ul>
+	<br>
+	</div>
+	
     </div>
  
 
