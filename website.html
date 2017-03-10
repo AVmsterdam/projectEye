@@ -13,16 +13,58 @@ div.container {
 	height: 100%; 
     width: 100%;
 }
-.button {
-	width: 8%;
-	clear: left;
-	display: block;
-	left: 2%;
-	border-radius: 100%;
-	position: fixed; 
-	top: 5%;
+div.headder {
+	background-color: #353557;
+	padding: 0px;
+	margin: 0px;
 }
+.logo {
+	max-width: 10%;
+	position: static;
+	}
+.topmenu {
+	position: absolute;
+	top: 8%;
+	float: right;
+	left: 12%;
+	font-size: 1.5em;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold; 
+	color: white;
+	border-spacing: 10px;
+	
+}
+.germany {
+	max-width: 100%;
+	position: static;
+	top: 0px;
+	left: 0px;
+}
+.country-name {
+	position: static;
+	color: white;
+	top: 8%;
+	left: 50px;
+	margin-bottom, margin-top: 0px;
+	padding: 0px;
+}
+blockquote.tweet {
+	color: white;
+	font-size: 0.4em;
+	font-family: ‘Merriweather’, Georgia, serif;
+	text-align: center;
+	margin-bottom, margin-top: 0px;
+	padding: 0px;
+}
+.demo {
+	text-align: right;
+	margin-bottom, margin-top: 0px;
+	padding: 0px;
+}
+
+
 div.textboxheader{
+	position: static;
 	height: 10%;
 	font-size: 2em;
 	font-family: 'Lato', sans-serif;
@@ -31,8 +73,14 @@ div.textboxheader{
 	clear: left;
 	text-align: center;
 	line-height: 150%;
+	padding: 0px;
+	margin: 0px;
+    background-image: url(https://storage.jumpshare.com/preview/7kppDAQHnk6M9sUcGFlbT5co2x8dT_X40xFytOjkomT9VTzJK56Ie4HxCdhjg5fSlavqER14P_TIpj3kAayWl1NlSmh0egFbdyHzE6LvoMAI4av1wcwKsmUDuTGzHRrg);
+	background-position: 0% 0%;
+	background-attachment: fixed;
 }
 div.textbox{
+	background-color: #353557;
 	height: 50%;
 	column-width: 25%;
 	column-count: 3;
@@ -44,81 +92,59 @@ div.textbox{
 	text-align: justify;
 	line-height: 130%;
 }
-header {
-    padding: 20px;
-    color: white;
-	font-family: 'Lato', sans-serif;
-    background-color: #191970;
-    clear: left;
-    text-align: center;
-	font-size: 1.2em; 
-}
-footer {
-    padding: 24px;
-    color: white;
-	font-family: 'Lato', sans-serif;
-    background-color: #191970;
-    clear: left;
-    text-align: justify;
-	font-size: 1.1em;
-}	
+ 	
 	
 div.column1{
+	background-color: white;
+	display: block;
 	font-family: ‘Merriweather’, Georgia, serif;
 	clear: left;
     text-align: justify;
 	font-size: 1em;
+	padding: 20px;
 }
 div.column2{
+	background-color: white;
+	display: block;
 	font-family: ‘Merriweather’, Georgia, serif;
 	clear: left;
     text-align: justify;
 	font-size: 1em;
+	padding: 20px;
 }
 .map{
-	max-width: 95%; 
+	max-width: 100%;
+	background-color: white;
+	padding: 0px;
+	margin: 0px;
 }
-.sub-menu 
-{ 
-   display: none;
-   position: fixed; top: 20%;
-   background-color: #CCCCCC;
-} 
-.button:focus ~ .sub-menu, 
-.button:active ~ .sub-menu, 
-.sub-menu:hover 
-{ 
-   display: block; 
-} 
+
 </style>
 </head>
 <body>
 <div class="container">
 
-   <header>
-   <h1>projectEye</h1>
-   </header>
-   
-	<div>
-	<a class="button" href="javascript:void(0);" tabindex="1"><img src="http://cdn1.savepice.ru/uploads/2017/3/1/4c1a8b687adab45623001d62dd6074f5-full.png" 
-	height = 100% width = 100%>
-	</a>
-	<ul class="sub-menu">
-		<li><a href="w">Economy</a></li>
-		<li><a href="weath">Weather</a></li>
-		<li><a href="g">Geography</a></li>
-	</ul>
-	</div>
+   <div class="headder">
+   <img class="logo" src="https://storage.jumpshare.com/preview/Ul6SHQsa4LlCYRAyT4Z_IzNHR_GavoTVaRxBDYSZvKnsSGqBnupEaxZfo7n_BLoUNEXqtG4_wX2lSmrVMg8IDVNlSmh0egFbdyHzE6LvoMAI4av1wcwKsmUDuTGzHRrg" border="0"/>
+   <table class="topmenu">
+    <tr><th><a>Geography</a></th><th><a>Economy</a></th><th><a>Weather</a></th></tr>
+   </table>
+   </div>
 	
 	<div align = "center">
     <img class = "map" 
-	src= "http://my-files.ru/Get/hn4szd/europa2.svg" border="0" / > 
+	src="https://storage.jumpshare.com/preview/O-ighdgVv1_jTJfPDgRUJm8Bc5J5snmeYlxDhwPwc4xUlNOcETsPXCgbHhxZEfuAl8o7hrAeQyrntAFgkDdsqFNlSmh0egFbdyHzE6LvoMAI4av1wcwKsmUDuTGzHRrg">
 	</div>
 	
-  
 	<div class="textboxheader">
-	Islamic Khalifat of Germano-France
+	<h2 class="country-name">Islamic Khalifat of Germano-France<h2>
+	<blockquote class="tweet">
+	<p>"Germano-France is a bad country"</p>
+	<footer class="demo">— <cite>Top tweet of this week</cite></footer>
+	</blockquote>
+
 	</div>
+	
     <div class="textbox">
     <div class = "column1">
 	<h3>Main Information</h3>GDP per capita: $9,65 <br> Unemployment rate: 76,8%
@@ -130,11 +156,7 @@ div.column2{
 	</div>
 	
     </div>
- 
-
-<footer>Concept and design by Andriy and Dennis Vershynin    avershynin@me.com    Munich, Germany</footer>
 
 </div>
 
 </body>
-</html>
