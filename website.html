@@ -22,17 +22,14 @@ div.headder {
 	max-width: 10%;
 	position: static;
 	}
-.topmenu {
-	position: absolute;
-	top: 8%;
-	float: right;
-	left: 12%;
-	font-size: 1.5em;
-	font-family: 'Lato', sans-serif;
-	font-weight: bold; 
-	color: white;
-	border-spacing: 10px;
-	
+.button {
+	width: 8%;
+	clear: left;
+	display: block;
+	left: 2%;
+	border-radius: 100%;
+	position: fixed; 
+	top: 5%;
 }
 
 .country-name {
@@ -113,6 +110,18 @@ div.column2{
 	padding: 0px;
 	margin: 0px;
 }
+.sub-menu 
+{ 
+   display: none;
+   position: fixed; top: 20%;
+   background-color: #CCCCCC;
+} 
+.button:focus ~ .sub-menu, 
+.button:active ~ .sub-menu, 
+.sub-menu:hover 
+{ 
+   display: block; 
+} 
 
 </style>
 </head>
@@ -121,14 +130,19 @@ div.column2{
 
    <div class="headder">
    <img class="logo" src="https://storage.jumpshare.com/preview/Ul6SHQsa4LlCYRAyT4Z_IzNHR_GavoTVaRxBDYSZvKnNVjhbzi23JnjIgcXRxlBBGZAsTDGBLas3BX23gjqFY1NlSmh0egFbdyHzE6LvoMAI4av1wcwKsmUDuTGzHRrg" border="0"/>
-   <table class="topmenu">
-    <tr><th><a>Geography</a></th><th><a>Economy</a></th><th><a>Weather</a></th></tr>
-   </table>
+   <a class="button" href="javascript:void(0);" tabindex="1"><img src="http://cdn1.savepice.ru/uploads/2017/3/1/4c1a8b687adab45623001d62dd6074f5-full.png" 
+	height = 100% width = 100%>
+	</a>
+	<ul class="sub-menu">
+		<li><a href="w">Economy</a></li>
+		<li><a href="weath">Weather</a></li>
+		<li><a href="g">Geography</a></li>
+	</ul>
    </div>
 	
 	<div align = "center">
     <img class = "map" 
-	src="https://storage.jumpshare.com/preview/O-ighdgVv1_jTJfPDgRUJm8Bc5J5snmeYlxDhwPwc4xSYWJsHbQfGTDusNT__N0vfQnZUWKnymNJqYz62E6oK1NlSmh0egFbdyHzE6LvoMAI4av1wcwKsmUDuTGzHRrg">
+	src="https://storage.jumpshare.com/preview/M8vlLw7HL_NGMPPC3xQW1Dp6Lql6I2zjKmhxpcU0K6BF9zFEjgMgj6qOACEINxiDqzSKQV66U9O6L5iYkCHkBFNlSmh0egFbdyHzE6LvoMAI4av1wcwKsmUDuTGzHRrg">
 	</div>
 	
 	<div class="textboxheader">
