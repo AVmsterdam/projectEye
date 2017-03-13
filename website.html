@@ -23,13 +23,14 @@ div.headder {
  position: static;
  }
 .button {
- width: 8%;
+ width: 4%;
  clear: left;
  display: block;
  right: 2%;
  border-radius: 100%;
  position: fixed; 
  top: 5%;
+ z-index: 2;
 }
 .country-name {
  position: static;
@@ -110,8 +111,23 @@ div.column2{
 .sub-menu 
 { 
    display: none;
-   position: fixed; top: 20%;
-   background-color: #CCCCCC;
+   position: fixed;
+   top: 3px;
+   right: 0%;
+   background-color: #F7F5E6;
+   font-size: 2em;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold; 
+	color: black;
+	text-align: left;
+	padding-top: 10%;
+	padding-bottom: 100%;
+	padding-left: 50px;
+	padding-right: 100px;
+	margin: 0px;
+	z-index: 1;
+	border-left: 3px solid #e8e8e8;
+	list-style: none;
 } 
 .button:focus ~ .sub-menu, 
 .button:active ~ .sub-menu, 
@@ -119,6 +135,11 @@ div.column2{
 { 
    display: block; 
 } 
+
+.sub-menu_elements {
+	color: black;
+}
+
 </style>
 </head>
 <body>
@@ -126,15 +147,18 @@ div.column2{
 
    <div class="headder">
    <img class="logo" src="http://cdn1.savepice.ru/uploads/2017/3/12/f5d54b340cb82a247f7f7c344453121b-full.png" border="0"/>
-   <a class="button" href="javascript:void(0);" tabindex="1"><img src="http://cdn1.savepice.ru/uploads/2017/3/1/4c1a8b687adab45623001d62dd6074f5-full.png" 
+   </div>
+   
+   <div>
+   <a class="button" href="javascript:void(0);" tabindex="1"><img src="http://cdn1.savepice.ru/uploads/2017/3/13/fd59f804ff79ceaf432464f00cde409f-full.png" 
  height = 100% width = 100%>
  </a>
  <ul class="sub-menu">
-  <li><a href="w">Economy</a></li>
-  <li><a href="weath">Weather</a></li>
-  <li><a href="g">Geography</a></li>
+  <li><a class="sub-menu_elements" href="w">Economy</a></li>
+  <li><a class="sub-menu_elements" href="weath">Weather</a></li>
+  <li><a class="sub-menu_elements" href="g">Geography</a></li>
  </ul>
-   </div>
+ </div>
  
  <div align = "center">
     <img class = "map" 
