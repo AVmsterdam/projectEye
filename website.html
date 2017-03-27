@@ -10,6 +10,23 @@ html, body {
  height: 100%;
  margin: 0px; 
 }
+div.textboxheader + div.begin {
+margin-top: 20px;
+ border-bottom: 1px solid #A0A0A0;
+}
+div.column + div.column { 
+margin-top: 3px; 
+}
+div.column + div.end {
+margin-top: 0px;
+border-top: 1px solid #A0A0A0;
+}
+div.end + div.foot {
+margin-top: 20px; 
+}
+li{
+  margin: 3px ;
+}
 div.container {
  height: 100%; 
     width: 100%;
@@ -76,50 +93,54 @@ div.textbox{
  text-align: justify;
  line-height: 130%;
 }
-  
- 
-div.column1{
- max-width: 80%;
- padding: 5%;
- margin-left: 5%;
- margin-right: 5%;
- margin-bottom: 1%;
- background-color: #DCDCDC;
- display: block;
- font-family: ‘Merriweather’, Georgia, serif;
- clear: left;
-    text-align: justify;
- font-size: 1em;
- padding: 5%;
- border: 3px solid #353557;
-}
-div.column2{
- max-width: 80%;
- padding: 5%;
- margin-left: 5%;
- margin-right: 5%;
- margin-top: 1%;
-background-color: #DCDCDC;
- display: block;
- font-family: ‘Merriweather’, Georgia, serif;
- clear: left;
-    text-align: justify;
- font-size: 1em;
- padding: 5%;
- border: 3px solid #353557;
-}
-.map{
- max-width: 65%;
+ div.textbox{
  background-color: white;
- padding: 0px;
- margin: 0px;
+ max-width: 100%;
+ font-size: 1em;
+ font-family: ‘Merriweather’, Georgia, serif;
+ padding: 1em;
+ color: black;
+ clear: left;
+ text-align: justify;
+ line-height: 115%;
+}
+div.column{
+ display: block; 
+ max-width: 70%;
+ padding: 3%;
+ margin: auto;
+ line-height: 115%; 
+ border-right: 1px solid #A0A0A0;
+ border-left: 1px solid #A0A0A0;
+ background-color: #E0E0E0;
+ display: block;
+ font-family: ‘Merriweather’, Georgia, serif;
+ clear: left;
+ text-align: justify;
+ font-size: 1em;
+}
+div.foot{
+padding: 15px; 
+background-color: #353557;
+font-family: 'Lato', sans-serif;
+color: white; 
+font-size: 1em;
+}
+div.begin{
+max-width: 68%;
+display: block; 
+margin: auto; 
+}
+div.end{
+max-width: 70%;
+display: block; 
+margin: auto; 
 }
 .topmenu{
 	display: inline;
 	top: 0%;
 	left: 0%;
 }
-
 * {box-sizing: border-box;}
 form {
   position: absolute;
@@ -149,15 +170,18 @@ button {
   right: 0;
   cursor: pointer;
 }
+.map{
+ max-width: 65%;
+ background-color: white;
+ padding: 0px;
+ margin: 0px;
+}
 button:before {
   content: "\f002";
   font-family: FontAwesome;
   font-size: 16px;
   color: #353557;
 }
-
-
-
 .sub-menu 
 { 
     display: none;
@@ -236,25 +260,33 @@ button:before {
     <img class = "map" 
  src="file:///C:/projectEye/europa4.svg">
  </div>
+
  
- <div class="textboxheader">
+<div class="textboxheader">
  <h2 class="country-name">Islamic Khalifat of Germano-France<h2>
  <blockquote class="tweet">
  <p>"Germano-France is a bad country"</p>
- <footer class="demo">— <cite>Top tweet of this week</cite></footer>
+ <footer class="demo">
+ — <cite>Top tweet of this week</cite></footer>
  </blockquote>
  </div>
- 
-  <div class="textbox">
-  <div class = "column1">
+ <div class = "begin">
+ </div>
+ <div class="textbox">
+ <div class = "column">
  <h3>Main Information</h3><ul>
  <li>GDP per capita: $9,65</li><li>Unemployment rate: 76,8%</li>
  <li>Ruler: Khalif Angelo Merke ibn Dschihad</li><li>Religion: Islam</li>
  </ul>
  </div>
- <div class = "column2">
+ <div class = "column">
  Hobbys: <br><ul><li>Attacking France</li><li>Attacking Poland</li><li>Attacking the Netherlands</li><li>Attacking Denmark</li></ul>
  Islamic Caliphate of Germany is a very bad country.<br>Do not go here.<br>It's bad.<br>Really bad.
+ </div>
+ <div class ="end">
+ </div>
+ <div class="foot">
+ Designed by Andriy Vershynin in Germany, Made by Dennis Vershynin in Russia
  </div>
  </div>
 
