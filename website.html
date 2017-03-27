@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
  <meta charset="utf-8">
 <style>
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -19,17 +20,16 @@ div.headder {
  margin: 0px;
 }
 .logo {
- max-width: 20%;
+ max-width: 22%;
  position: static;
  }
 .button {
  width: 4%;
  clear: left;
- display: block;
+ display: inline-block;
  right: 2%;
- border-radius: 100%;
  position: fixed; 
- top: 5%;
+ top: 6%;
  z-index: 2;
 }
 .country-name {
@@ -66,7 +66,7 @@ div.textboxheader{
  background-attachment: fixed;
 }
 div.textbox{
- background-color: white;
+ background-color: #white;
  max-width: 100%;
  font-size: 1em;
  font-family: ‘Merriweather’, Georgia, serif;
@@ -81,8 +81,9 @@ div.textbox{
 div.column1{
  max-width: 80%;
  padding: 5%;
- margin: 5%;
- border: 5px solid #F7F5E6;
+ margin-left: 5%;
+ margin-right: 5%;
+ margin-bottom: 1%;
  background-color: #DCDCDC;
  display: block;
  font-family: ‘Merriweather’, Georgia, serif;
@@ -90,48 +91,97 @@ div.column1{
     text-align: justify;
  font-size: 1em;
  padding: 5%;
- border: 3px solid #F7F5E6;
+ border: 3px solid #353557;
 }
 div.column2{
  max-width: 80%;
  padding: 5%;
- margin: 5%;
- border: 5px solid #F7F5E6;
- background-color: #DCDCDC;
+ margin-left: 5%;
+ margin-right: 5%;
+ margin-top: 1%;
+background-color: #DCDCDC;
  display: block;
  font-family: ‘Merriweather’, Georgia, serif;
  clear: left;
     text-align: justify;
  font-size: 1em;
  padding: 5%;
- border: 3px solid #F7F5E6;
+ border: 3px solid #353557;
 }
 .map{
- max-width: 82%;
+ max-width: 65%;
  background-color: white;
  padding: 0px;
  margin: 0px;
 }
+.topmenu{
+	display: inline;
+	top: 0%;
+	left: 0%;
+}
+
+* {box-sizing: border-box;}
+form {
+  position: absolute;
+  top: 2.15%;
+  left: 3%;
+  width: 65%;
+  margin: 0 auto;
+  background: white;
+  border: 3px solid #353557;
+   box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+input, button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+}
+button {
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #353557;
+}
+
+
+
 .sub-menu 
 { 
-   display: none;
-   position: fixed;
-   top: 3px;
-   right: 0%;
-   background-color: #F7F5E6;
-   font-size: 2em;
- font-family: 'Lato', sans-serif;
- font-weight: bold; 
- color: black;
- text-align: left;
- padding-top: 10%;
- padding-bottom: 100%;
- padding-left: 50px;
- padding-right: 100px;
- margin: 0px;
- z-index: 1;
- border-left: 3px solid #e8e8e8;
- list-style: none;
+    display: none;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    background-color: #ededed;
+    font-size: 2em;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold; 
+	color: black;
+	text-align: left;
+	text-decoration: none;
+	list-style: none;
+	letter-spacing: 1px;
+	padding-top: 10%;
+	padding-bottom: 100%;
+	padding-left: 50px;
+	padding-right: 100px;
+	margin: 0%;
+	z-index: 1;
+	border-left: 2px solid #83a7e1;
+	list-style: none;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 } 
 .button:focus ~ .sub-menu, 
 .button:active ~ .sub-menu, 
@@ -140,7 +190,20 @@ div.column2{
    display: block; 
 } 
 .sub-menu_elements {
- color: black;
+	padding-left: 0%;
+	color: #353557;
+	text-decoration: none;
+	line-height: 2em;
+	outline: none;
+}
+.sub-menu_list{
+	list-style: none;
+	line-height: 1.8em;
+}
+.sub-menu_line{
+	position: absolute;
+	top: 6.5%;
+	left: 0%;
 }
 </style>
 </head>
@@ -151,15 +214,22 @@ div.column2{
    <img class="logo" src="http://cdn1.savepice.ru/uploads/2017/3/12/f5d54b340cb82a247f7f7c344453121b-full.png" border="0"/>
    </div>
    
-   <div>
+   <div class="topmenu">
    <a class="button" href="javascript:void(0);" tabindex="1"><img src="http://cdn1.savepice.ru/uploads/2017/3/13/fd59f804ff79ceaf432464f00cde409f-full.png" 
  height = 100% width = 100%>
  </a>
- <ul class="sub-menu">
+ <div class="sub-menu">
+ <form>
+  <input type="text" placeholder="Search here..">
+  <button type="submit"></button>
+</form>
+<hr class="sub-menu_line" align="center" width="300%" size="1" color="#83a7e1" />
+ <ul class="sub-menu_list">
   <li><a class="sub-menu_elements" href="w">Economy</a></li>
   <li><a class="sub-menu_elements" href="weath">Weather</a></li>
   <li><a class="sub-menu_elements" href="g">Geography</a></li>
  </ul>
+ </div>
  </div>
  
  <div align = "center">
@@ -186,8 +256,7 @@ div.column2{
  Hobbys: <br><ul><li>Attacking France</li><li>Attacking Poland</li><li>Attacking the Netherlands</li><li>Attacking Denmark</li></ul>
  Islamic Caliphate of Germany is a very bad country.<br>Do not go here.<br>It's bad.<br>Really bad.
  </div>
- 
-  </div>
+ </div>
 
 </div>
 
