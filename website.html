@@ -120,21 +120,19 @@ div.column{
  font-size: 1em;
 }
 div.foot{
-padding: 3%;
-max-width: 100%;
-margin: 0%;
+padding: 15px; 
 background-color: #353557;
 font-family: 'Lato', sans-serif;
 color: white; 
-font-size: 1.5em;
+font-size: 1em;
 }
 div.begin{
-max-width: 68%;
+max-width: 74%;
 display: block; 
 margin: auto; 
 }
 div.end{
-max-width: 70%;
+max-width: 76%;
 display: block; 
 margin: auto; 
 }
@@ -172,17 +170,14 @@ button {
   right: 0;
   cursor: pointer;
 }
-.map{
- max-width: 65%;
- background-color: white;
- padding: 0px;
- margin: 0px;
-}
 button:before {
   content: "\f002";
   font-family: FontAwesome;
   font-size: 16px;
   color: #353557;
+}
+button:hover {
+	color: #353557;
 }
 .sub-menu 
 { 
@@ -202,7 +197,7 @@ button:before {
 	padding-top: 10%;
 	padding-bottom: 100%;
 	padding-left: 50px;
-	padding-right: 100px;
+	padding-right: 200px;
 	margin: 0%;
 	z-index: 1;
 	border-left: 2px solid #83a7e1;
@@ -215,16 +210,29 @@ button:before {
 { 
    display: block; 
 } 
+.menuheadertext {
+	font-size: 1.5em; 
+	line-height: 2em; 
+}
 .sub-menu_elements {
 	padding-left: 0%;
 	color: #353557;
 	text-decoration: none;
+	font-size: 1em; 
 	line-height: 2em;
 	outline: none;
 }
+.sub-menu_elements:hover {
+	padding-left: 0%;
+	color: #83a7e1;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	outline: none;
+}
 .sub-menu_list{
+    padding-left:0;
 	list-style: none;
-	line-height: 1.8em;
+	line-height: 1.5em;
 }
 .sub-menu_line{
 	position: absolute;
@@ -251,6 +259,7 @@ button:before {
 </form>
 <hr class="sub-menu_line" align="center" width="300%" size="1" color="#83a7e1" />
  <ul class="sub-menu_list">
+<div class ="menuheadertext">Map variants:</div>
   <li><a class="sub-menu_elements" href="w">Economy</a></li>
   <li><a class="sub-menu_elements" href="weath">Weather</a></li>
   <li><a class="sub-menu_elements" href="g">Geography</a></li>
@@ -262,7 +271,14 @@ button:before {
     <img class = "map" 
  src="file:///C:/projectEye/europa4.svg">
  </div>
-
+ 
+ <div class="textboxheader">
+ <h2 class="country-name">Islamic Khalifat of Germano-France<h2>
+ <blockquote class="tweet">
+ <p>"Germano-France is a bad country"</p>
+ <footer class="demo">— <cite>Top tweet of this week</cite></footer>
+ </blockquote>
+ </div>
  
 <div class="textboxheader">
  <h2 class="country-name">Islamic Khalifat of Germano-France<h2>
@@ -287,9 +303,9 @@ button:before {
  </div>
  <div class ="end">
  </div>
- </div>
-  <div class="foot">
+ <div class="foot">
  Designed by Andriy Vershynin in Germany, Made by Dennis Vershynin in Russia
+ </div>
  </div>
 
 </div>
