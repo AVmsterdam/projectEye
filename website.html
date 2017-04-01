@@ -10,20 +10,6 @@ html, body {
  height: 100%;
  margin: 0px; 
 }
-div.textboxheader + div.begin {
-margin-top: 20px;
- border-bottom: 1px solid #A0A0A0;
-}
-div.column + div.column { 
-margin-top: 3px; 
-}
-div.column + div.end {
-margin-top: 0px;
-border-top: 1px solid #A0A0A0;
-}
-div.end + div.foot {
-margin-top: 20px; 
-}
 li{
   margin: 3px ;
 }
@@ -82,64 +68,59 @@ div.textboxheader{
  background-position: 0% 0%;
  background-attachment: fixed;
 }
-div.textbox{
- background-color: #white;
+.column1{
  max-width: 100%;
- font-size: 1em;
- font-family: ‘Merriweather’, Georgia, serif;
- padding: 1em;
- color: black;
- clear: left;
- text-align: justify;
- line-height: 130%;
-}
- div.textbox{
- background-color: white;
- max-width: 100%;
- font-size: 1em;
- font-family: ‘Merriweather’, Georgia, serif;
- padding: 1em;
- color: black;
- clear: left;
- text-align: justify;
- line-height: 115%;
-}
-div.column{
- display: block; 
- max-width: 70%;
- padding: 3%;
- margin: auto;
- line-height: 115%; 
- border-right: 1px solid #A0A0A0;
- border-left: 1px solid #A0A0A0;
- background-color: #E0E0E0;
  display: block;
- font-family: ‘Merriweather’, Georgia, serif;
- clear: left;
- text-align: justify;
- font-size: 1em;
+ padding: 5%;
+ margin: 0%;
+ font-size: 2em;
+}
+.column2{
+ max-width: 100%;
+ display: block;
+ padding: 5%;
+ margin: 0%;
+ font-size: 2em;
+ color: #353557;
+ text-align: center;
+ background-image: url(http://cdn1.savepice.ru/uploads/2017/3/29/732aac9e1440c07dbc3c1ac05d428fe7-full.jpg);
+}
+.column3{
+ background: #ededed;
+ max-width: 100%;
+ display: block;
+ padding: 5%;
+ margin: 0%;
+ font-size: 2em;
+}
+.government_image{
+ max-width: 60%;
+ display: inline-block;
+ float: right;
 }
 div.foot{
-padding: 15px; 
+padding: 3%;
+max-width: 100%;
+margin: 0%;
 background-color: #353557;
 font-family: 'Lato', sans-serif;
 color: white; 
-font-size: 1em;
+font-size: 1.5em;
 }
 div.begin{
-max-width: 74%;
+max-width: 68%;
 display: block; 
 margin: auto; 
 }
 div.end{
-max-width: 76%;
+max-width: 70%;
 display: block; 
 margin: auto; 
 }
 .topmenu{
-	display: inline;
-	top: 0%;
-	left: 0%;
+ display: inline;
+ top: 0%;
+ left: 0%;
 }
 * {box-sizing: border-box;}
 form {
@@ -170,14 +151,17 @@ button {
   right: 0;
   cursor: pointer;
 }
+.map{
+ max-width: 65%;
+ background-color: white;
+ padding: 0px;
+ margin: 0px;
+}
 button:before {
   content: "\f002";
   font-family: FontAwesome;
   font-size: 16px;
   color: #353557;
-}
-button:hover {
-	color: #353557;
 }
 .sub-menu 
 { 
@@ -187,40 +171,35 @@ button:hover {
     right: 0%;
     background-color: #ededed;
     font-size: 2em;
-	font-family: 'Lato', sans-serif;
-	font-weight: bold; 
-	color: black;
-	text-align: left;
-	text-decoration: none;
-	list-style: none;
-	letter-spacing: 1px;
-	padding-top: 10%;
-	padding-bottom: 100%;
-	padding-left: 50px;
-	padding-right: 200px;
-	margin: 0%;
-	z-index: 1;
-	border-left: 2px solid #83a7e1;
-	list-style: none;
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-} 
+ font-family: 'Lato', sans-serif;
+ font-weight: bold; 
+ color: black;
+ text-align: left;
+ text-decoration: none;
+ list-style: none;
+ letter-spacing: 1px;
+ padding-top: 10%;
+ padding-bottom: 100%;
+ padding-left: 50px;
+ padding-right: 200px;
+ margin: 0%;
+ z-index: 1;
+ border-left: 2px solid #83a7e1;
+ list-style: none;
+ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 .button:focus ~ .sub-menu, 
 .button:active ~ .sub-menu, 
 .sub-menu:hover 
 { 
    display: block; 
 } 
-.menuheadertext {
-	font-size: 1.5em; 
-	line-height: 2em; 
-}
 .sub-menu_elements {
-	padding-left: 0%;
-	color: #353557;
-	text-decoration: none;
-	font-size: 1em; 
-	line-height: 2em;
-	outline: none;
+ padding-left: 0%;
+ color: #353557;
+ text-decoration: none;
+ line-height: 2em;
+ outline: none;
 }
 .sub-menu_elements:hover {
 	padding-left: 0%;
@@ -230,14 +209,13 @@ button:hover {
 	outline: none;
 }
 .sub-menu_list{
-    padding-left:0;
-	list-style: none;
-	line-height: 1.5em;
+ list-style: none;
+ line-height: 1.8em;
 }
 .sub-menu_line{
-	position: absolute;
-	top: 6.5%;
-	left: 0%;
+ position: absolute;
+ top: 6.5%;
+ left: 0%;
 }
 </style>
 </head>
@@ -259,7 +237,7 @@ button:hover {
 </form>
 <hr class="sub-menu_line" align="center" width="300%" size="1" color="#83a7e1" />
  <ul class="sub-menu_list">
-<div class ="menuheadertext">Map variants:</div>
+ <div class ="menuheadertext">Map variants:</div>
   <li><a class="sub-menu_elements" href="w">Economy</a></li>
   <li><a class="sub-menu_elements" href="weath">Weather</a></li>
   <li><a class="sub-menu_elements" href="g">Geography</a></li>
@@ -271,14 +249,7 @@ button:hover {
     <img class = "map" 
  src="file:///C:/projectEye/europa4.svg">
  </div>
- 
- <div class="textboxheader">
- <h2 class="country-name">Islamic Khalifat of Germano-France<h2>
- <blockquote class="tweet">
- <p>"Germano-France is a bad country"</p>
- <footer class="demo">— <cite>Top tweet of this week</cite></footer>
- </blockquote>
- </div>
+
  
 <div class="textboxheader">
  <h2 class="country-name">Islamic Khalifat of Germano-France<h2>
@@ -288,26 +259,26 @@ button:hover {
  — <cite>Top tweet of this week</cite></footer>
  </blockquote>
  </div>
- <div class = "begin">
- </div>
- <div class="textbox">
- <div class = "column">
- <h3>Main Information</h3><ul>
+ <div class = "column1">
+  <img src="file:///C:/projectEye/government.svg" class="government_image">
+ <h2>Main Information</h2><ul><br>
  <li>GDP per capita: $9,65</li><li>Unemployment rate: 76,8%</li>
  <li>Ruler: Khalif Angelo Merke ibn Dschihad</li><li>Religion: Islam</li>
  </ul>
  </div>
- <div class = "column">
- Hobbys: <br><ul><li>Attacking France</li><li>Attacking Poland</li><li>Attacking the Netherlands</li><li>Attacking Denmark</li></ul>
- Islamic Caliphate of Germany is a very bad country.<br>Do not go here.<br>It's bad.<br>Really bad.
+ <div class="column2">
+ <h2>Main industries:</h2>
+ <ul><li>Car manufacturing (50%)</li><li>Iron (10%)</li><li>Toys (10%)</li><li>Financial Services (10%)</li></ul>
  </div>
- <div class ="end">
- </div>
+ <div class="column3">
+ <p>"Islamistan is the largest national economy in Europe, the fourth-largest by nominal GDP in the world, and fifth by GDP (PPP). The country is a founding member of the European Union and the Eurozone. The economic model of Islamistan is based on the concept of the social market economy."</p>
+ </div> 
+  
+  
  <div class="foot">
  Designed by Andriy Vershynin in Germany, Made by Dennis Vershynin in Russia
  </div>
- </div>
-
+ 
 </div>
 
 </body>
