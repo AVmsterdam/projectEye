@@ -14,8 +14,7 @@ $(function(){
 		
 		arr[obj.id] = country;
 		
-		obj
-		.hover(function(){
+		obj.hover(function(){
 			this.animate({
 				fill: '#83a7e1'
 			}, 300);
@@ -23,8 +22,15 @@ $(function(){
 			this.animate({
 				fill: attributes.fill
 			}, 300);
+		}),
+		obj.click(function(){
+			var body = document.getElementById("body");
+			body.style.background = "red";
+			var newbox = document.createElement("div");
+            newbox.className += " column2";
+            newbox.innerHTML = "DENNIS BYDLO ON SJEL WSEH MISCHEK I NE PODELILSA BYDLO BYDLO BYDLO";
+            document.getElementById("columns").appendChild(newbox);
 		})
-		
 	}
 	
 		
