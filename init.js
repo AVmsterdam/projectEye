@@ -2,7 +2,7 @@ $(function(){
 	
 	var r = Raphael('map', 1200, 800),
 		attributes = {
-            fill: '#ffffff'
+            fill: '#ededed'
         },
 		arr = new Array();
 	
@@ -24,16 +24,12 @@ $(function(){
 			}, 300);
 		}),
 		obj.click(function(){
-			var body = document.getElementById("body");
-			body.style.background = "red";
-			var newbox = document.createElement("div");
-            newbox.className += " column2";
-            newbox.innerHTML = "DENNIS BYDLO ON SJEL WSEH MISCHEK I NE PODELILSA BYDLO BYDLO BYDLO";
+			var countrytext = paths[arr[this.id]].text;
+            var newbox = document.createElement("div");
+            newbox.className += " column3";
+            newbox.innerHTML = countrytext;
             document.getElementById("columns").appendChild(newbox);
 		})
-	}
-	
-		
-			
+	}	
 });
 
